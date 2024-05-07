@@ -1,9 +1,15 @@
+import React from "react"
+
 import Image from "next/image"
+
+import First from "@/components/First/First"
+
 import styles from "./page.module.css"
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <First />
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
