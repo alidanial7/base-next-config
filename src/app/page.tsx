@@ -28,7 +28,7 @@ export default function Home() {
   }
 
   return (
-    <Stack bgcolor="#ECF0F6" height="100vh" alignItems="center">
+    <Stack alignItems="center" bgcolor="#ECF0F6" height="100vh">
       <Stack
         gap={2}
         justifyContent="center"
@@ -64,14 +64,14 @@ export default function Home() {
 
         <Box
           bgcolor={theme => theme.palette.secondary.main}
-          p={3}
           borderRadius="16px"
+          p={3}
         >
           <Typography variant="h6">کیف پول ریالی</Typography>
           <Stack alignItems="end">
             <Typography
-              fontWeight="bold"
               color={theme => theme.palette.grey[900]}
+              fontWeight="bold"
             >
               20000000ریال
             </Typography>
@@ -79,19 +79,19 @@ export default function Home() {
         </Box>
         <Stack
           bgcolor={theme => theme.palette.grey[900]}
-          p={3}
           borderRadius="16px"
           gap={2}
+          p={3}
         >
-          <Typography fontWeight={700} color="white" variant="h6">
+          <Typography color="white" fontWeight={700} variant="h6">
             اطلاعیه جدید
           </Typography>
-          <Typography variant="body2" color={theme => theme.palette.grey[500]}>
+          <Typography color={theme => theme.palette.grey[500]} variant="body2">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است...{" "}
           </Typography>
         </Stack>
-        <Tabs value={value} onChange={handleChange} variant="fullWidth">
+        <Tabs value={value} variant="fullWidth" onChange={handleChange}>
           <Tab label="ریالی" />
           <Tab label="امتیازی" />
           <Tab label="خدمت" />

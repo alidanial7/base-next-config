@@ -1,6 +1,6 @@
 import {
-  ThemeOptions as MuiThemeOptions,
   PaletteOptions,
+  ThemeOptions as MuiThemeOptions,
 } from "@mui/material/styles"
 
 declare module "@mui/material/styles" {

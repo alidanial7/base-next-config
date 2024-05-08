@@ -1,11 +1,10 @@
 import React from "react"
-
+import type { Metadata } from "next"
 import localFont from "next/font/local"
 
 import CustomThemeProvider from "@/providers/CustomThemeProvider"
 import RTLCacheProvider from "@/providers/RTLCacheProvider"
 
-import type { Metadata } from "next"
 import "./globals.css"
 
 /* -------------------------------------------------------------------------- */
