@@ -5,7 +5,16 @@ import CustomAppBarLogo from "./Logo/CustomAppBarLogo"
 
 function CustomAppBar(): JSX.Element {
   return (
-    <AppBar component="header" position="sticky">
+    <AppBar
+      component="header"
+      position="sticky"
+      sx={{
+        display: {
+          xxs: "block",
+          md: "none",
+        },
+      }}
+    >
       <Container maxWidth="xl" sx={{ bgcolor: "#ECF0F6" }}>
         <Toolbar disableGutters>
           <Stack

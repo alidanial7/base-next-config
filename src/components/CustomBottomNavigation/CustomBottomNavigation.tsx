@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
-import { BottomNavigation, BottomNavigationAction } from "@mui/material"
+import { BottomNavigation, BottomNavigationAction, Stack } from "@mui/material"
 
 import bottomNavigationActionList from "./data"
 
@@ -21,22 +21,24 @@ function CustomBottomNavigation() {
   const router = useRouter()
 
   return (
-    <BottomNavigation
-      showLabels
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue)
-      }}
-    >
-      {bottomNavigationActionList.map(item => (
-        <BottomNavigationAction
-          icon={item.icon}
-          key={item.id}
-          label={item.label}
-          onClick={() => router.push(item.to)}
-        />
-      ))}
-    </BottomNavigation>
+    <Stack display={{ xxs: "block", md: "none" }}>
+      <BottomNavigation
+        showLabels
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue)
+        }}
+      >
+        {bottomNavigationActionList.map(item => (
+          <BottomNavigationAction
+            icon={item.icon}
+            key={item.id}
+            label={item.label}
+            onClick={() => router.push(item.to)}
+          />
+        ))}
+      </BottomNavigation>
+    </Stack>
   )
 }
 
