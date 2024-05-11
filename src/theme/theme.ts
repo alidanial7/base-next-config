@@ -199,6 +199,28 @@ const ThemeOptions: MuiThemeOptions = {
         },
       },
     },
+
+    MuiBottomNavigation: {
+      styleOverrides: {
+        root: {
+          boxShadow: "0px 5px 28px 0px #D4D4D4",
+          borderRadius: "30px",
+          position: "fixed",
+          bottom: 0,
+          right: 0,
+          left: 0,
+        },
+      },
+    },
+
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          fontFamily: "var(--font-vazirmatn)",
+          color: "rgb(50,56,70)",
+        },
+      },
+    },
   },
 }
 
