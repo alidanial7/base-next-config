@@ -43,6 +43,7 @@ const paletteColors: PaletteOptions = {
     contrastText: "#fff",
   },
   grey: {
+    "200": "#F1F1F3",
     "300": "#DBDDE0",
     "400": "#C8C8C8",
     "500": "#979797",
